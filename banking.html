@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shottobaadi Bank Of Bangladesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-5xl text-center my-10 front-semibold">Hello <span class="text-purple-600">User</span>
+        Just Deposit do not think about anything else !!!
+    </header>
+
+    <main>
+        <section class="w-3/4 mx-auto">
+            <div class="grid grid-cols-3 gap-5">
+
+                <div class="bg-blue-300 p-8 text-white rounded-xl">
+                    <h3 class="text-2xl">Deposit and forget</h3>
+                    <h2 class="text-4xl font-semibold">$<span id="deposit-total">000</span></h2>
+                </div>
+
+                <div class="bg-yellow-300 p-8 text-white rounded-xl">
+                    <h3 class="text-2xl">Withdraw (Not Wise)</h3>
+                    <h2 class="text-4xl font-semibold">$<span id="withdraw-total">000</span></h2>
+                </div>
+
+                <div class="bg-green-300 p-8 text-white rounded-xl">
+                    <h3 class="text-2xl">Balance (Just for Show)</h3>
+                    <h2 class="text-4xl font-semibold">$<span id="balance-input">7550</span></h2>
+                </div>
+                
+
+            </div>
+            <!--Button  Section-->
+             <div class="grid grid-cols-2 gap-5 mt-8">
+                <div class="space-y-8 bg-green-200 p-8 rounded-xl">
+                    <h3 class="text-2xl">Please deposit quickly</h3>
+                    <input id="deposit-input" class="w-3/4 block px-3 my-3 h-9 rounded border-slate-400 border-2" type="text" placeholder="$ Deposit Amount" required>
+                    <button id="deposit-button" class="bg-green-600 text-white rounded px-3 py-2 font-semibold">Submit quickly</button>
+                </div>
+
+
+
+                <div class="space-y-8 bg-orange-200 p-8 rounded-xl">
+                    <h3 class="text-2xl">Please don't Withdraw</h3>
+                    <input id="withdraw-input" class="w-3/4 block px-3 my-3 h-9 rounded border-slate-400 border-2" type="text" placeholder="$ Withdraw Amount" required>
+
+
+                    <button id="withdraw-button" class="bg-green-600 text-white rounded px-3 py-2 font-semibold">Submit Slowly</button>
+                    <h3 id="error" class="text-1xl text-orange-800"></h3>
+
+                </div>
+
+             </div>
+
+
+        </section>
+    </main>
+  <script src="banking.js"></script>  
+</body>
+</html>
